@@ -1,0 +1,120 @@
+@import '../../../../assets/master';
+
+
+// $dark-blue: #0E0D44;
+// $purple: #7B287D;
+// $mid-purple: #7067CF;
+// $light-purple: #B7C0EE;
+// $light-green: #CBF3D2;
+
+// $off-white: #f4f4f4;
+
+.container {
+    padding: 0;
+}
+
+p {
+    color: $light-purple;
+}
+
+h2 {
+    text-align: right;
+    padding: 0 15px;
+    font-family: 'Domine', serif !important;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $dark-blue;
+}
+
+.card-deck {
+    margin-right:0;
+}
+
+.home-projects-div {
+    margin-top: 10px;
+    background-color: $off-white;
+}
+
+.projects-container {
+    min-height: 350px;
+
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    font-size: 2rem;
+    text-align: center;
+}
+
+td > .img-fluid {
+    max-width: 100px;
+}
+
+.mask  {
+    display: flex;
+    justify-content: center;
+}
+
+.deep-purple.lighten-4 {
+    background-color: $light-purple !important;
+}
+
+
+.mask h3 {
+    align-self: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card > button {
+    border: 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .projects-container.container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+
+        .mask {
+            height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h2 {
+        text-align: center;
+    }
+    .card {
+        min-height: 300px;
+        margin-bottom: 25px;
+    }
+    div.text-white{
+        border-radius: 4px;
+    }
+
+    .view .mask {
+        min-height: 150px;
+    }
+
+}
+@media screen and (max-width: 768px){
+.card {
+    height: 200px;
+}
+ 
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        height: 350px;
+    }
+}

@@ -1,0 +1,54 @@
+@import "../../../assets/master";
+
+img {
+    max-width:100%;
+}
+
+nav {
+    background-color: $light-purple;
+    margin-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    .container {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        padding-top:0;
+        padding-bottom: 0;
+        max-width: 60%;
+    }
+
+    .navbar-collapse {
+    
+        .navbar-nav {
+            
+            button {
+                background-color: $mid-purple;
+                margin-left:0;
+                margin-right:0;
+            }
+       
+            a {
+                color: $dark-blue;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $off-white;
+            }
+
+
+        }
+    }
+}
+
+.third{
+    padding-right: 0 ;
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        width:60%;
+    }
+}
+

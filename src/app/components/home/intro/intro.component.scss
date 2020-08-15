@@ -1,0 +1,110 @@
+@import '../../../../assets/master';
+.card {
+    background-color: $light-purple;
+}
+
+.intro-div {
+    p {
+        color: $charcoal;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align:center;
+    }
+    
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    .card-text {
+        margin-bottom:0;
+    }
+
+    .card-title {
+        font-family: "Domine", serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .intro-button {
+        background-color: $dark-blue;
+    }
+
+    mdb-card-text {
+        text-align: center;
+    }
+  
+    a >  button {
+        background-color: $mid-purple;
+        margin: 0 auto;
+        color: white;
+    }
+    .btn-git {
+        background-color: $github;
+        color:white;
+        border-radius: 70%;
+    }
+
+    
+
+}
+
+@media screen and(max-width: 768px) {
+    .projects-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .intro-div {
+        padding: 0 10px;
+    }
+    .card-title {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 768px ) {
+    .intro-div {
+        height: 70vh;
+       
+    }
+
+    .view .mask {
+        min-height: 200px;
+    }
+
+    .intro-div .card .card-body  p {
+        padding: 15px 0;
+        margin:0 auto;
+        font-size: 1.2rem !important;
+    }
+}
+ 
+
+@media screen and (max-width: 768px ) {
+    .rgba-white-slight.waves-light {
+        max-height:300px;
+    }
+    h2.text-right {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (min-width: 992px ) {
+    .intro-div {
+        height: 80vh;
+       
+    }
+    .card {
+        max-height: 70vh;
+    }
+    .intro-div {
+        height: 75vh;
+    }
+  
+
+
+
+}

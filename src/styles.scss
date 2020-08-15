@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./assets/master";
+body {
+    background-color: $off-white;
+}
+
+h2.text-right {
+    font-weight: bold;
+    color: $dark-blue;
+}

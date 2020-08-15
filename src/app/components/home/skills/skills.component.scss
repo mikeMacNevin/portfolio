@@ -1,0 +1,79 @@
+@import '../../../../assets/master';
+
+h5 {
+    margin-top:0px;
+}
+h2 {
+    font-family: "Domine", serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+
+}
+.progress-container {
+
+    .progress {
+        width:100%;
+        margin: 1% auto;
+        height: 37px;
+
+
+        .progress-label {
+            width: 20%;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $dark-blue;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-align: center;
+            font-family: "Domine", serif;
+            p   {
+                vertical-align: middle;
+                padding-top: 5px;
+
+            }
+        }
+
+        .progress-bar {
+            background-color: $light-purple;
+            height: 50px;
+
+        }
+    }
+ }
+
+
+@media screen and (max-width: 768px) {
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .progress-container {
+        .progress {
+            height: 25px;
+            .progress-label {
+                font-size: 0.8rem;
+                height: 25px;
+            }
+            .progress-bar {
+                height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .progress-container {
+        .progress {
+            .progress-label {
+                font-size: 0.6rem;
+                height: 25px;
+            }
+            .progress-bar {
+                height: 25px;
+            }
+        }
+    }
+
+}

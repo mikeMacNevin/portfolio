@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en-us">  <!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Page2Images - Website Screenshot Generator & API</title>
+
+	
+	<meta name="google-site-verification" content="UNYjAhcOyQCIv0Gd3Z5XNv-NpeKr79K72vpq8CrdMFw" />
+
+	<META NAME="Description" CONTENT="Generate website screeshot and website thumbnail online by API. You can preview a website for mobile phone. Free to use.">	
+	<META name="author" content="Page2Images.com">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<!-- Normalize default styles -->
+
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/normalize.css" media="screen" />
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/fonts.css" media="screen" />
+	<!-- Skeleton grid system -->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/skeleton.css" media="screen" />
+	<!-- Base Template Styles-->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/base.css" media="screen" />
+	<!-- Superfish Menu-->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/superfish.css" media="screen" />
+	<!-- Template Styles-->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/style.css?v=1.7" media="screen" />
+	<!-- PrettyPhoto -->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/prettyPhoto.css" media="screen" />
+	<!-- Layout and Media queries-->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/layout.css" media="screen" />
+	<!-- Onebyone styles-->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/jquery.onebyone.css" media="screen" />
+	<!-- Animate CSS-->
+	<link rel="stylesheet" href="http://www.page2images.com/resources/css/animate.min.css" media="screen" />
+	<!-- index CSS-->
+    <link rel="stylesheet" href="http://www.page2images.com/resources/css/index.css" media="screen" />
+
+    <link rel="stylesheet" href="http://www.page2images.com/resources/css/boxy.css" media="screen" />
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="http://www.page2images.com/resources/css/ie/ie8.css" media="screen" />
+	<![endif]-->
+
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<!-- initialize jQuery Library -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery-1.8.2.min.js"></script>
+	<!-- Contact Form -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.form.js"></script>
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.validate.min.js"></script>
+	<!-- Progress -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.progress.js"></script>
+	<!-- Boxy -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.boxy.js"></script>
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="http://www.page2images.com/resources/img/favicon.ico">
+	<link rel="apple-touch-icon" href="http://www.page2images.com/resources/img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://www.page2images.com/resources/img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://www.page2images.com/resources/img/apple-touch-icon-114x114.png">
+
+
+	<!-- For Old Browsers
+	================================================== -->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+	</div>
+	<![endif]-->
+
+	 <!-- Javascript Files
+	================================================== -->
+	<!-- initialize jQuery Library -->
+	<!-- Modernizr -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/modernizr.custom.14583.js"></script>
+	<!-- Superfish Menu -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/superfish.js"></script>
+	<!-- easing plugin -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.easing.min.js"></script>
+	<!-- Prettyphoto -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.prettyPhoto.js"></script>
+	<!-- Mobile Menu -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.mobilemenu.js"></script>
+	<!-- Twitter -->
+	<!-- Elastslide -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.elastislide.js"></script>
+	<!-- Custom Checkbox -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.checkbox.js"></script>
+	<!-- Flexslider -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.flexslider.js"></script>
+	<!-- Reveal Modal -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.reveal.js?v=1.7"></script>
+	<!-- Dropkick select -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/dropkick.js"></script>
+	<!-- Custom radio-checkboxes -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.custom-radio-checkbox.js"></script>
+	<!-- Tooltips (tipsy) -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.tipsy.js"></script>
+	<!-- Contact Form -->
+
+
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.jcountdown.min.js"></script>
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.onebyone.min.js"></script>
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/jquery.touchwipe.min.js"></script>
+	<!-- Google Map -->
+	<!-- Custom -->
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/custom.js"></script>
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/raphael.min.js"></script>
+	<script type="text/javascript" src="http://www.page2images.com/resources/js/roundbar.js"></script>
+
+	<!-- index js -->
+    <script type="text/javascript" src="http://www.page2images.com/resources/js/index.js"></script>
+</head>
+<body class="page home-page">
+
+<!-- BEGIN WRAPPER -->
+	<div id="wrapper">
+					<!-- BEGIN HEADER -->
+			<div id="header">
+
+	 <div id="top-header">
+        <div class="container">
+            <div class="grid_12">
+                <div class="login-holder fleft">
+                    <div class="fleft" style="height: 22px;">
+                        <a title="Webpage Snapshot" class="bookmarletbtn" style="a:focus{text-decoration： none;}" href='javascript:(function(){
+    var unencodedURL = location.href;
+    var websiteURL = encodeURIComponent(unencodedURL);
+    var p2i_form = document.createElement("form");
+
+    var p2i_formname = "page2images_snapshot_submit_html";
+    p2i_form.action = "http://www.page2images.com/URL-Live-Website-Screenshot-Generator-Before";
+
+    p2i_form.target = p2i_formname;
+    p2i_form.method = "POST";
+
+    var p2i_html = document.createElement("input");
+    p2i_html.type = "text";
+    p2i_html.name = "html";
+    p2i_html.value = encodeURIComponent(document.documentElement.innerHTML);
+
+    var p2i_device = document.createElement("input");
+    p2i_device.type = "text";
+    p2i_device.name = "device";
+    p2i_device.value = 6;
+
+    var p2i_url = document.createElement("input");
+    p2i_url.type = "text";
+    p2i_url.name = "url";
+    p2i_url.value = websiteURL;
+
+    p2i_form.appendChild(p2i_html);
+    p2i_form.appendChild(p2i_device);
+    p2i_form.appendChild(p2i_url);
+    document.body.appendChild(p2i_form);
+    p2i_window = window.open("", p2i_formname);
+    if (p2i_window) {
+        p2i_form.submit();
+        document.body.removeChild(p2i_form)
+    } else {
+        alert("Sorry, post error.");
+    }
+})();'>
+                            <img alt="Webpage Snapshot" src="http://www.page2images.com/resources/img/top_snapshot.png" />
+                        </a>
+                        <a title="PinPage" class="bookmarletbtn bookmarletbtn-red" href='javascript:(function(){
+    var unencodedURL = location.href;
+    var websiteURL = encodeURIComponent(unencodedURL);
+    var p2i_form = document.createElement("form");
+
+    var p2i_formname = "page2images_pin_submit_html";
+    p2i_form.action = "http://www.page2images.com/home/pinpage";
+
+    p2i_form.target = p2i_formname;
+    p2i_form.method = "POST";
+
+    var p2i_html = document.createElement("input");
+    p2i_html.type = "text";
+    p2i_html.name = "html";
+    p2i_html.value = encodeURIComponent(document.documentElement.innerHTML);
+
+    var p2i_device = document.createElement("input");
+    p2i_device.type = "text";
+    p2i_device.name = "device";
+    p2i_device.value = 6;
+
+    var p2i_url = document.createElement("input");
+    p2i_url.type = "text";
+    p2i_url.name = "url";
+    p2i_url.value = websiteURL;
+
+    p2i_form.appendChild(p2i_html);
+    p2i_form.appendChild(p2i_device);
+    p2i_form.appendChild(p2i_url);
+    document.body.appendChild(p2i_form);
+    p2i_window = window.open("", p2i_formname);
+    if (p2i_window) {
+        p2i_form.submit();
+        document.body.removeChild(p2i_form)
+    } else {
+        alert("Sorry, post error.");
+    }
+})();'>
+                            <img alt="PinPage" src="http://www.page2images.com/resources/img/top_pinpage.png" />
+                        </a>
+                    </div>
+                    <img alt="" src="http://www.page2images.com/resources/img/top_prompt.png" style="margin: -5px 0px -10px;"/>
+                </div>
+                <div class="alert alert-info" id="logoutId">You have been logged out</div>
+                <!-- Begin Language Switcher
+
+                <ul class="lang-switcher sf-menu">
+                    <li><a href="#">english</a>
+                        <ul>
+                            <li><a href="#">deutsch</a></li>
+                            <li><a href="#">francais</a></li>
+                            <li><a href="#">espanol</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                -->
+                <!-- End Language Switcher -->
+
+                <div class="login-holder fright">
+                	<a href="http://www.page2images.com/my_account" class="signin" rel="nofollow">michaelrmacnevin@gmail.com</a><a href="http://www.page2images.com/user/logout" class="signin" rel="nofollow">Logout</a>                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!--Main Header-->
+    <div id="main-header">
+        <div class="container">
+            <div class="grid_12">
+
+                <!-- BEGIN LOGO -->
+                <div id="logo">
+                    <!-- Image based Logo-->
+                    <a href="http://www.page2images.com/"><img src="http://www.page2images.com/resources/img/logo.png" alt="website screenshot"/></a>
+
+                </div>
+                <!-- END LOGO -->
+
+                <!-- BEGIN NAVIGATION -->
+                				<nav class="primary ">
+					<ul class="sf-menu">
+												<li class="current-menu-item">
+															<a href="http://www.page2images.com/home" >Home																	</a>
+																				</li>
+												<li class="">
+															<a href="http://www.page2images.com/convert_url_to_image_api_rate_plans" title="Mobile Website Screenshot API Price">Price																	</a>
+																				</li>
+												<li class="">
+															<a href="http://www.page2images.com/website_thumbnail_api_document" title="How to convert get to mobile screenshot by API online">API																	</a>
+																				</li>
+												<li class="">
+															<a href="http://www.page2images.com/website_screenshot_tools" title="Mobile Phone Emulator">Tools									<span class="sf-sub-indicator"> »</span>								</a>
+																						<ul>
+									<li><a href="/free_online_mobile_phone_emulator">Mobile Emulator</a></li>
+									<li><a href="/free_convert_website_url_to_images_in_batch">Batch Url to Image Converter</a></li>
+									<li><a href="/mobile_ok_checker">Free Mobile OK Check</a></li>
+									<li><a href="/batch_mobile_checker">Batch Mobile Checker</a></li>
+									<li><a href="/Convert-HTML-to-Image-or-PDF-online">HTML to Image</a></li>
+									<li><a href="/URL-Live-Website-Screenshot-Generator">Screenshot Generator</a></li>
+								</ul>
+													</li>
+												<li class="">
+															<a rel="nofollow" href="http://www.page2images.com/contact_us" >Contact Us</a>
+																				</li>
+												<li class="">
+															<a href="http://www.page2images.com/my_account" >My Account																	</a>
+																				</li>
+						
+					</ul>
+				</nav>
+				<!-- END NAVIGATION -->
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+			<!-- END HEADER -->
+
+			<!-- BEGIN CONTENT  -->
+			<script src="http://www.page2images.com/js/p2i.js"></script>
+<!-- BEGIN SLIDER -->
+<section id="slider">
+	<!-- BEGIN container -->
+	<div class="container">
+
+		<div class="grid_5 index_top_left">
+			<div>
+				<h1 style="width:385px;">The Best Website screenshot API</h1>
+				That is 100% mobile friendly
+			</div>
+			<dl class="clearfix">
+				<dt>Client Devices:</dt>
+				<dd id="phone" class="device phone"></dd>
+				<dd id="ipad" class="device ipad"></dd>
+				<dd id="mac" class="device mac on"></dd>
+			</dl>
+			<div class="search_style clearfix">
+				<input id="urlid" name="urlid" type="text" value="http://" />
+				<button type="button">GO</button>
+							</div>
+			<div id="error_msg" style="color:orange;font-size:12px;height:20px;"></div>
+			<p style="margin-top:-15px;">
+				<div class="tolow">Screenshot as smart phones</div>
+				<div class="tolow">Flash & Javascript friendly</div>
+				<div class="tolow">99.9% online guarantee</div>
+				<div class="tolow">Easy to integrate</div>
+			</p>
+
+			<a rel="nofollow" href="http://www.page2images.com/sign_up" class="n_account"><span>Create a
+					New Account</span></a>
+		</div>
+				<div class="grid_7">
+			<div class="index_top_right g_phone hide" val="2">
+				<img id="phoneimg"
+					src='http://api.page2images.com/directlink?p2i_url=http://www.bing.com&p2i_device=2&p2i_size=224x403&p2i_screen=356x640&p2i_key=page2images@2013@local&p2i_wait=10'/>
+				<script> var p2iPhone = new page2images(); p2iPhone.thumbnail('phoneimg');</script>
+			</div>
+			<div class="index_top_right g_ipad hide" val="5">
+				<img id="ipadimg"
+					src='http://api.page2images.com/directlink?p2i_url=http://www.bing.com&p2i_device=5&p2i_size=322x418&p2i_screen=500x640&p2i_key=page2images@2013@local&p2i_wait=10'/>
+				<script> var p2iIpad = new page2images(); p2iIpad.thumbnail('ipadimg');</script>
+			</div>
+			<div class="index_top_right g_mac" val="6">
+				<img id="macimg"
+					src='http://api.page2images.com/directlink?p2i_url=http://www.bing.com&p2i_device=6&p2i_size=458x287&p2i_screen=1024x640&p2i_key=page2images@2013@local&p2i_wait=10'/>
+				<script> var p2iMac = new page2images(); p2iMac.thumbnail('macimg');</script>
+			</div>
+		</div>
+
+	</div>
+	<!-- BEGIN container -->
+
+
+</section>
+<!-- END SLIDER -->
+
+
+<!-- BEGIN CONTENT HOLDER -->
+<div
+	id="content-wrapper" class="large-text">
+
+
+	<!-- BEGIN PRIMARY AREA -->
+	<section id="primary-home-area" class="home-area indent">
+
+		<div class="container index_main">
+			<div class="grid_6">
+				<h3 class="fast">Fast Rendering</h3>
+				<p>Website screenshots in 10-15 seconds.</p>
+			</div>
+			<div class="grid_6">
+				<h3 class="screenshots">Accurate results</h3>
+				<p>HTML5, CSS3, Flash and Flex friendly. With API you can take screenshots of mobile and tablet devices and desktop computers.</p>
+			</div>
+		</div>
+
+	</section>
+	<!-- END PRIMARY AREA -->
+
+
+	<!-- BEGIN SECONDARY AREA -->
+	<section id="secondary-home-area" class="home-area indent">
+
+		<!-- BEGIN CUSTOMERS -->
+		<div class="widget-carousel customers-list">
+			<div class="container">
+				<div class="grid_12">
+					<h2>You're in good company</h2>
+					<!-- Elastislide Carousel -->
+					<div id="carousel1" class="es-carousel-wrapper">
+						<div class="es-carousel">
+							<ul>
+																<li>
+								<a href="http://www.ckada.com" target="_blank" rel="nofollow">
+																		<img src="http://www.page2images.com/resources/img/sm-logo1.png" alt="Customer 1 Info" />
+								</a>
+								</li>
+																<li>
+								<a href="http://www.insequent.com" target="_blank" rel="nofollow">
+																		<img src="http://www.page2images.com/resources/img/sm-logo2.png" alt="Customer 1 Info" />
+								</a>
+								</li>
+																<li>
+								<a href="http://www.newsregister.com" target="_blank" rel="nofollow">
+																		<img src="http://www.page2images.com/resources/img/sm-logo4.png" alt="Customer 1 Info" />
+								</a>
+								</li>
+																<li>
+								<a href="http://www.returnonintelligence.com" target="_blank" rel="nofollow">
+																		<img src="http://www.page2images.com/resources/img/sm-logo6.png" alt="Customer 1 Info" />
+								</a>
+								</li>
+																<li>
+								<a href="https://www.brightwire.com" target="_blank" rel="nofollow">
+																		<img src="http://www.page2images.com/resources/img/sm-logo8.png" alt="Customer 1 Info" />
+								</a>
+								</li>
+															</ul>
+						</div>
+					</div>
+					<!-- End Elastislide Carousel -->
+
+				</div>
+			</div>
+		</div>
+		<!-- END CUSTOMERS -->
+
+	</section>
+	<!-- END SECONDARY AREA -->
+
+
+	<!-- BEGIN TERTIARY AREA -->
+	<section id="tertiary-home-area" class="home-area indent">
+
+		<!-- BEGIN PARTNERS -->
+		<div class="widget-carousel clients-list">
+
+			<div class="container">
+				<h2 class="grid_12">More reasons to choose Page2Images</h2>
+			</div>
+			<div class="container index_main">
+				<div class="grid_6">
+					<h3 class="custom">We Love Developers</h3>
+					<p>
+						We will help you implement the API on your system for free.
+						<span style="display:none;">
+							<a href="http://www.beyondsecurity.com/vulnerability-scanner-verification/www.page2images.com">
+								<img src="https://secure.beyondsecurity.com/verification-images/www.page2images.com/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" />
+							</a>
+						</span>
+					</p>
+				</div>
+				<div class="grid_6">
+					<h3 class="gift">Support friendly</h3>
+					<p>It is difficult to provide one solution that fits all. So if you have special needs, our support staff welcome the opportunity to work with you to resolve them. Please contact.</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- END PARTNERS -->
+
+
+	</section>
+	<!-- END TERTIARY AREA -->
+
+</div>
+
+<div id="preloader"></div>
+			<!-- END CONTENT  -->
+
+			<!-- BEGIN FOOTER -->
+			<!-- Start Google Javascript -->
+<script type="text/javascript">
+	var _prum = [['id', '521c526babe53d5f7f000000'],
+	             ['mark', 'firstbyte', (new Date()).getTime()]];
+	(function() {
+	    var s = document.getElementsByTagName('script')[0]
+	      , p = document.createElement('script');
+	    p.async = 'async';
+	    p.src = '//rum-static.pingdom.net/prum.min.js';
+	    s.parentNode.insertBefore(p, s);
+	})();
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-43611877-1', 'page2images.com');
+	ga('send', 'pageview');
+</script>
+<!-- End Google Javascript -->
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"btYPi1a4ZP00af", domain:"page2images.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=btYPi1a4ZP00af" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+
+<!-- BEGIN WIDGETS -->
+<style>
+.widget a {
+    color: #8899A1;
+	font-size: 16px;
+}
+a {
+    outline: 0 none;
+    text-decoration: none;
+}
+ul li {
+    list-style: none outside none;
+}
+.widget ul li {
+    font-family: 'MuseoSans500Regular',Arial,sans-serif;
+}
+</style>
+<section id="widgets">
+	<div class="indent">
+		<div class="container">
+
+			<div class="grid_2">
+				<!-- BEGIN NAV Widget -->
+				<div class="widget widget-nav">
+					<h4>
+						Pages					</h4>
+					<ul>
+						<li><a href="http://www.page2images.com/faq" rel="nofollow">FAQ </a></li>
+						<li><a href="http://www.page2images.com/term_of_use" rel="nofollow">Terms of Use </a></li>
+						<li>
+							<a href="http://www.page2images.com/privacy_policy" rel="nofollow">Privacy Policy</a>
+						</li>
+						<li>
+							<a href="http://www.page2images.com/mobile_friendly_convert_url_to_image_api_online">About Us</a>
+						</li>
+						<li>
+							<a href="http://page2images.wordpress.com" target="_blank">Blog</a>
+						</li>
+						<li>
+							<a href="http://www.page2images.com/return_policy" target="_blank" rel="nofollow">Return Policy</a>
+						</li>
+						<!--<li><a href="events.html">Events</a></li>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>-->
+					</ul>
+				</div>
+				<!-- END NAV Widget -->
+			</div>
+
+			<div class="grid_3">
+				<!-- BEGIN SOCIAL LINKS Widget -->
+				<div class="widget widget-social">
+					<!--
+					<h4>
+						Social media					</h4>
+					<ul class="social-links">
+						<li class="facebook"><a href="#">Be a fan on Facebook						</a></li>
+						<li class="twitter"><a href="#">Follow us on Twitter						</a></li>
+						<li class="google-plus"><a href="#">Join us on Google Plus						</a></li>
+						<li class="linkedin"><a href="#">Find us on Linkedin </a>
+						</li>
+						<li class="rss"><a href="#">RSS feed </a></li>
+						<li class="skype"><a href="#">Our Skype </a></li>
+					</ul>
+					-->
+					<h4>Social media</h4>
+					<ul class="social-links">
+						<li class="facebook"><a href="http://www.facebook.com/page2images">Be a fan on Facebook</a></li>
+						<li class="twitter"><a href="https://twitter.com/page2images">Follow us on Twitter</a></li>
+						<li class="google-plus"><a href="https://plus.google.com/106143532511145739765">Join us on Google Plus</a></li>
+						<li class="linkedin">
+							<a href="http://www.linkedin.com/company/kada-tech/website-thumbnail-api-23441371/product?trk=biz_product">
+								Find us on Linkedin
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END SOCIAL LINKS Widget -->
+			</div>
+
+			<div class="grid_2">
+				<!-- BEGIN TWITTER Widget -->
+				<div class="widget widget-twitter">
+					&nbsp;
+					<h4></h4>
+				</div>
+				<!-- END TWITTER Widget -->
+			</div>
+
+			<div class="grid_5 colborder">
+				<div class="extra-widget-area">
+					<div class="inner">
+
+						<!-- BEGIN REQUEST Widget -->
+						<div class="widget widget-request">
+							<h4>
+								Don't have an account?							</h4>
+							<!-- .btn -->
+							<a href="http://www.page2images.com/sign_up" class="btn full-w" rel="nofollow">
+								<div class="btn-inner">
+									<font color="#196008">Create a New Account </font>
+								</div>
+							</a>
+							<!-- //.btn -->
+						</div>
+						<!-- END REQUEST Widget -->
+
+						<!-- BEGIN NEWSLETTER Widget -->
+						<div class="widget widget-newsletter">
+							<!--
+							<h4>
+								Get our newsletter								:
+							</h4>
+							<form id="newsletter-form">
+								<input type="text" name="newsletter-text-input"
+									id="newsletter-text-input" value="" placeholder="your email..." />
+								<div class="submit-holder">
+									<input type="submit" value="" />
+								</div>
+							</form>
+							 -->
+						</div>
+						<!-- END NEWSLETTER Widget -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END WIDGETS -->
+
+
+<!-- BEGIN FOOTER -->
+<footer id="footer">
+	<div class="container">
+		<div class="grid_12">
+			<small>&copy;2013 - 2019 Page2Images. All rights reserved.
+			</small>
+		</div>
+	</div>
+</footer>
+<!-- END FOOTER -->
+
+<script type="text/javascript" src="/js/p2i.thumbnails.js"></script>
+<script type="text/javascript">
+	window.onload=function() {
+		p2iQuery().run("Free", false, false);
+	};
+</script>        <!-- END FOOTER -->
+			</div>
+<!-- END WRAPPER -->
+
+<span style="display:none;">version:1.7</span>
+</body>
+</html>

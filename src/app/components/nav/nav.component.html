@@ -1,0 +1,25 @@
+  
+  <!-- <mdb-navbar SideClass="navbar navbar-1 navbar-light amber lighten-2" [containerInside]="false"> -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="/assets/Logo.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav   dropdown-menu-right text-right ml-auto ">
+          <a class="nav-item nav-link"  href="#" routerLinkActive="routerlinknow" [routerLink]="['']">
+              <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>  Home</button>
+           <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link third"  href="#"  [routerLink]="['/resume']">
+            <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>Resume</button>
+          </a>
+          
+          <a class="nav-item nav-link" href="#" [routerLink]="['/contact']">
+            <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>Contact</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- </mdb-navbar> -->
