@@ -1,14 +1,14 @@
-<form class="border border-light ">
+<form class="border border-light " [formGroup]="contactForm">
     <div class="container-fluid">
         <p class="h4 mb-4 text-center">Contact Me</p>
 
 
-        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+        <input type="text" formControlName="contactFormName" id="contactFormName"  class="form-control mb-4" placeholder="Name" mdbInputDirective [(ngModel)]="itemName">
 
-        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+        <input type="email" formControlName="contactFormEmail"  id="contactFormEmail"  class="form-control mb-4" placeholder="E-mail" mdbInputDirective [(ngModel)]="itemEmail">
 
         <label for="defaultSelect">Subject</label>
-        <select id="defaultSelect" class="browser-default custom-select mb-4">
+        <select formControlName="contactFormSelect" id="contactFormSelect"class="browser-default custom-select mb-4" mdbInputDirective [(ngModel)]="itemFormSelect" >
             <option value="" disabled="">Choose option</option>
             <option value="1" selected="">Web Design/Development Gig</option>
             <option value="2">Employer Inquiry</option>
@@ -17,13 +17,13 @@
 
         </select>
 
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+        <textarea class="form-control rounded-0" formControlName="contactFormTextarea" id="contactFormTextarea"  rows="3" placeholder="Message" mdbInputDirective [(ngModel)]="itemTextarea"></textarea>
 
-        <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-            <!-- <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label> -->
-        </div>
+        <!-- <div class="custom-control custom-checkbox mb-4">
+            <input type="checkbox" class="custom-control-input" id="contactFormCopy">
+            <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label> -->
+     <!-- </div> --> 
 
-        <button class="btn btn-info btn-block" type="submit">Send</button>
+        <button  [disabled]="contactForm.invalid" (click)="onSubmit()" class="btn btn-info btn-block" type="submit">Send</button>
     </div>
 </form>

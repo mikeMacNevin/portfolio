@@ -1,25 +1,46 @@
   
   <!-- <mdb-navbar SideClass="navbar navbar-1 navbar-light amber lighten-2" [containerInside]="false"> -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="/assets/Logo.png" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav   dropdown-menu-right text-right ml-auto ">
-          <a class="nav-item nav-link"  href="#" routerLinkActive="routerlinknow" [routerLink]="['']">
-              <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>  Home</button>
-           <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link third"  href="#"  [routerLink]="['/resume']">
-            <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>Resume</button>
-          </a>
-          
-          <a class="nav-item nav-link" href="#" [routerLink]="['/contact']">
-            <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>Contact</button>
-          </a>
-        </div>
+  <nav class="navbar navbar-light deep-purple darken-4 ">
+    <div class="container justify-content-center">
+      <div class="row ">
+          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center">
+            <a class="navbar-brand mx-0" href="#"><img src="/assets/logo-white.png" /></a>
+          </div>
+          <div class="col-md-8">
+            <div class="navbar-nav dropdown-menu-right text-center justify-content-center flex-row d-none d-sm-none d-md-block">
+              <a class="nav-item"  href="#" routerLinkActive="routerlinknow" [routerLink]="['']">
+                  <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Skills&nbsp;</button>
+                  <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-item third"  href="#"  [routerLink]="['/projects']">
+                <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>Projects</button>
+              </a>
+              <a class="nav-item third"  href="#"  [routerLink]="['/resume']">
+                <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Resume&nbsp;</button>
+              </a>
+            </div>
+          </div>
       </div>
     </div>
   </nav>
 <!-- </mdb-navbar> -->
+
+
+
+
+<!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav   dropdown-menu-right text-right ml-auto ">
+    <a class="nav-item nav-link "  href="#" routerLinkActive="routerlinknow" [routerLink]="['']">
+        <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Skills&nbsp;</button>
+     <span class="sr-only">(current)</span></a>
+     <a class="nav-item nav-link third"  href="#"  [routerLink]="['/projects']">
+      <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>Projects</button>
+    </a>
+    <a class="nav-item nav-link third"  href="#"  [routerLink]="['/resume']">
+      <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Resume&nbsp;</button>
+    </a>
+    <!-- <a class="nav-item nav-link" href="#" [routerLink]="['/contact']">
+      <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>Contact</button>
+    </a> -->
+  <!-- </div>
+</div> --> 

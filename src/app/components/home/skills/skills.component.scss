@@ -4,7 +4,7 @@ h5 {
     margin-top:0px;
 }
 h2 {
-    font-family: "Domine", serif;
+    // font-family: "Domine", serif;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: right;
@@ -13,10 +13,11 @@ h2 {
 .progress-container {
 
     .progress {
+        background-color: white;
         width:100%;
-        margin: 1% auto;
-        height: 37px;
-
+        margin: 0 auto 1vh auto;
+        height: 5.09vh;
+        
 
         .progress-label {
             width: 20%;
@@ -26,17 +27,18 @@ h2 {
             padding-left: 5px;
             padding-right: 5px;
             text-align: center;
-            font-family: "Domine", serif;
+            // font-family: "Domine", serif;
             p   {
                 vertical-align: middle;
                 padding-top: 5px;
+                color: #6200ea;
 
             }
         }
 
         .progress-bar {
-            background-color: $light-purple;
-            height: 50px;
+            // background-color: $light-purple;
+            height: 5vh;
 
         }
     }
@@ -77,3 +79,4 @@ h2 {
     }
 
 }
+

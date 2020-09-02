@@ -1,1 +1,29 @@
+.col-md-4 {
 
+}
+
+.app-container {
+    
+}
+
+p {
+    font-family: Raleway sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Bitter serif;
+
+}
+
+.mobile-container {
+    h2 {
+        color: rgba(49, 27, 146,0.7);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .app-container {
+        max-width: 98%;
+    }
+}

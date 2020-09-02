@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IntroComponent } from './intro/intro.component';
-
+import { HomeProjectsComponent } from './home-projects/home-projects.component';
+import { SkillsComponent } from './skills/skills.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

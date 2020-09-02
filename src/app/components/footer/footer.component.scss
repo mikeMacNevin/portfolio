@@ -2,7 +2,27 @@
 
 
 div {
-    margin-top: 2rem;
-    height: 50px;
-    background-color: $light-purple;
+    color: rgba(49, 27, 146,0.5);
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.fa {
+    font-size: 1.5rem;
+    margin-left:0.2rem;
+    margin-right:0.2rem;
+}
+
+.fa-facebook-official {
+    color: rgba(66, 103, 178, 0.8);
+}
+
+.fa-github {
+    color: rgba(36, 41, 46, 0.8);
+}
+
+.fa-envelope {
+    color: rgba(212,70,56, 0.5);
 }

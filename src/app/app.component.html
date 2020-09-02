@@ -1,7 +1,33 @@
 
 <app-nav></app-nav>
+  <div class="container app-container d-none d-md-block mt-4">
+  
+    <div class="row  ">
+        <div class="col-12 col-md-4  px-0">
+            <app-intro></app-intro>
+
+        </div>
+        
+  
+        <div class="col-12 col-md-8 px-0 d-block ">
+          <main [@routerTransition]="page.activatedRouteData.state">
+            <router-outlet #page="outlet"></router-outlet>
+          </main> 
+        </div>
+
+      </div>
+  </div>
+
+  <div class="container-fluid mobile-container d-block d-md-none">
+
+    <app-intro></app-intro>
+    <h2 class="text-center mt-4">Skills</h2>
+    <app-skills></app-skills>
+    <h2 class="text-center mt-4">Projects</h2>
+    <app-portfolio></app-portfolio>
+    <h2 class="text-center mt-4">Resume</h2>
+      <app-resume></app-resume>
+  </div>
 
 
-  <main [@routerTransition]="page.activatedRouteData.state">
-    <router-outlet #page="outlet"></router-outlet>
-  </main> 
+  <app-footer></app-footer>

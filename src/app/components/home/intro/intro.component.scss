@@ -3,9 +3,12 @@
     background-color: $light-purple;
 }
 
+
+
+
 .intro-div {
     p {
-        color: $charcoal;
+        color: white;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-left: 15px;
@@ -14,17 +17,28 @@
     }
     
     h4 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
+
+   
 
     .card-text {
         margin-bottom:0;
     }
 
     .card-title {
-        font-family: "Domine", serif;
         font-weight: bold;
         text-align: center;
+        color:white;
+        margin-top:20px;
+        // color: #1de9b6;
+        font-family: Bitter, serif;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .intro-button {
@@ -55,18 +69,26 @@
         margin-left: 15px;
         margin-right: 15px;
     }
+    .navbar-brand {
+        margin-right: 0;
+    }
     .intro-div {
         padding: 0 10px;
+        max-width:80%;
+        margin: 0 auto;
     }
     .card-title {
         text-align: center;
+    }
+
+    .card-body {
+        font-size: 1.5rem;
     }
 }
 
 
 @media screen and (min-width: 768px ) {
     .intro-div {
-        height: 70vh;
        
     }
 
@@ -83,6 +105,10 @@
  
 
 @media screen and (max-width: 768px ) {
+    .card, .intro-div {
+        height: 35vh;
+    }
+    
     .rgba-white-slight.waves-light {
         max-height:300px;
     }
@@ -92,18 +118,15 @@
 
 }
 
+
+.card, .intro-div {
+    height: 72vh;
+}
+
+
 @media screen and (min-width: 992px ) {
-    .intro-div {
-        height: 80vh;
-       
-    }
-    .card {
-        max-height: 70vh;
-    }
-    .intro-div {
-        height: 75vh;
-    }
-  
+
+
 
 
 

@@ -1,0 +1,69 @@
+
+p {
+    font-family: Raleway sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Bitter serif;
+
+}
+.col-6, .col-12 {
+    padding: 0;
+}
+
+.card-image {
+    height:36vh
+}
+
+.card-image > button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+
+
+}
+
+
+
+h3 {
+    color:white;
+    font-size:2.7rem;
+}
+
+.muvy-card {
+    background: url('/assets/muvy-wide.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px;
+
+}
+.who-card {
+    background: url('/assets/whoreps.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ev-card{
+
+    background: url('/assets/ev.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+
+.card-image {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mask {
+    background-color: rgba(49, 27, 146,0.7) !important;
+}
+
+td {
+    font-size:2rem;
+}
+td >img {
+    max-width:100px;
+}
+

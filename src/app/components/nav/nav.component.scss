@@ -1,7 +1,10 @@
 @import "../../../assets/master";
 
 img {
-    max-width:100%;
+    max-width:80%;
+}
+
+button {
 }
 
 nav {
@@ -13,11 +16,13 @@ nav {
     .container {
         padding: 0;
     }
-
+    .row {
+        width: 100%;
+    }
     .navbar-brand {
         padding-top:0;
         padding-bottom: 0;
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .navbar-collapse {
@@ -25,14 +30,18 @@ nav {
         .navbar-nav {
             
             button {
-                background-color: $mid-purple;
+                // background-color: $mid-purple;
                 margin-left:0;
                 margin-right:0;
+                font-family: Roboto sans-serif;
+
             }
        
             a {
+                font-family: Roboto sans-serif;
+
                 color: $dark-blue;
-                font-size: 1.5rem;
+                font-size: 1rem !important;
                 font-weight: bold;
                 color: $off-white;
             }
@@ -48,7 +57,7 @@ nav {
 
 @media screen and (min-width: 768px) {
     img {
-        width:60%;
+        width:100%;
     }
 }
 
