@@ -1,36 +1,43 @@
-<div class="container">
+<div class="container portfolio-container " >
 
-  <div class="row">
+  <div class="row wow fadeInUp muvy-row" data-wow-duration="2s" >
     <div class="col-12">
-      <div class="card-image muvy-card view overlay ">
-        <button type="button" class="" data-toggle="modal"  [attr.data-target]="'#'">
+      <div class="card-image muvy-card view overlay  " >
+        <div class="layer">
+        <button type="button" class="" data-toggle="modal"  [attr.data-target]="'#0modal'">
           <div class="mask deep-purple darken-4 d-flex flex-column justify-content-center ">
-            <h3>Muvy Ninja</h3>
+            <h3 class="hover-title">Muvy Ninja</h3>
           </div>
         </button>
+      </div>
       </div>
 
     </div>
   </div>
-  <div class="row">
-    <div class="col-6">
-      <div class="card-image who-card view overlay">
-        <button type="button" data-toggle="modal"  [attr.data-target]="'#2modal'">
+  <div class="row wow fadeInUp" data-wow-duration="2s" >
+    <div class="col-6 ev-col">
+      <div class="card-image who-card view overlay" > 
+        <div class="layer">
+
+        <button type="button" data-toggle="modal"  [attr.data-target]="'#1modal'">
           
           <div class="mask deep-purple darken-4 d-flex flex-column justify-content-center ">
-            <h3>WhoRepsYou</h3>
+            <h3 class="hover-title">WhoRepsYou</h3>
           </div>
         </button>
+        </div>
       </div>
     </div>
-    <div class="col-6">
-      <div class="card-image ev-card view overlay">              
-        <button type="button" data-toggle="modal"  [attr.data-target]="'#3modal'">
-        <div class="mask deep-purple darken-4 d-flex flex-column justify-content-center ">
-          <h3>EV Custom Homes</h3>
+    <div class="col-6 who-col">
+      <div class="card-image ev-card view overlay" >   
+        <div class="layer">
+           
+        <button type="button" data-toggle="modal"  [attr.data-target]="'#2modal'">
+          <div class="mask deep-purple darken-4 d-flex flex-column justify-content-center ">
+            <h3 class="hover-title">EV Custom Homes</h3>
+          </div>
+        </button>
         </div>
-      </button>
-
       </div>
     </div>
   </div>
@@ -41,8 +48,8 @@
     <div class="modal fade" [attr.id]="site.count + 'modal' " tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">{{site.title}}</h3>
+            <div class="modal-header align-items-center justify-content-center">
+              <h3>{{site.title}}</h3>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -67,7 +74,7 @@
               </div>
             <div class="modal-footer justify-content-center">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              <a href={{site.link}}> <button type="button" class="btn btn-secondary">Visit Site</button></a>
+              <a href={{site.link}} target="_blank"> <button type="button" class="btn btn-link">Visit Site</button></a>
             </div>
           </div>
         </div>

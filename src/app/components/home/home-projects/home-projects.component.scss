@@ -113,7 +113,36 @@ td > .img-fluid {
 }
 
 @media screen and (max-width: 576px) {
-    .card {
-        height: 350px;
+    .row {
+        .col-md-6 {
+            padding-top: 2rem;
+        }
     }
+
+}
+
+
+
+/* Disable WowJS on TABLET and DEKSTOP*/
+@media only screen and (min-width : 576px) {
+	.wow {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
 }

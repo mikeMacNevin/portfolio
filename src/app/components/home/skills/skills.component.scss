@@ -11,27 +11,28 @@ h2 {
 
 }
 .progress-container {
-
+    height: auto;
     .progress {
         background-color: white;
-        width:100%;
+        width:90%;
         margin: 0 auto 1vh auto;
         height: 5.09vh;
         
 
         .progress-label {
             width: 20%;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: bold;
             color: $dark-blue;
             padding-left: 5px;
-            padding-right: 5px;
+            padding-right: 2rem;
             text-align: center;
             // font-family: "Domine", serif;
             p   {
                 vertical-align: middle;
                 padding-top: 5px;
-                color: #6200ea;
+                color: $theblue;
+                font-weight: bold;
 
             }
         }
@@ -39,11 +40,19 @@ h2 {
         .progress-bar {
             // background-color: $light-purple;
             height: 5vh;
-
+            color: $mid-purple;
+            background-color: #4E61B4;
         }
     }
  }
 
+ @media screen and (min-width: 768px) {
+    .progress-container {
+        height: 86vh;
+    }
+
+    
+}
 
 @media screen and (max-width: 768px) {
     h2 {
@@ -51,9 +60,13 @@ h2 {
         margin-bottom: 15px;
     }
     .progress-container {
+        margin-bottom:5rem;
         .progress {
+            text-align: center;
             height: 25px;
+            width:100;
             .progress-label {
+                margin-left:2rem;
                 font-size: 0.8rem;
                 height: 25px;
             }
@@ -68,15 +81,43 @@ h2 {
 
     .progress-container {
         .progress {
+        
             .progress-label {
                 font-size: 0.6rem;
-                height: 25px;
+                height: 15px;
+                p {
+                    padding-top: 0;
+                }
             }
             .progress-bar {
-                height: 25px;
+                height: 15px;
             }
         }
+        margin-bottom: 3rem;
     }
 
 }
 
+
+@media only screen and (min-width : 576px) {
+	.wow {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}

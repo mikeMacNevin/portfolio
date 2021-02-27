@@ -24,13 +24,14 @@ import { Router, RouterModule, NavigationEnd, RouterLinkActive } from '@angular/
          style({ height: '!' }),
                 query(':enter', style({ transform: 'translateX(100%)' }, ), { optional: true }),
                 query(':enter, :leave', 
-                        style({ position: 'absolute', top: 80, left: 0, right: 0, opacity: 0.8 }), 
+                        style({ position: 'absolute', top: 0, left: 0, right: 0, opacity: 0.8 }), 
                               { optional: true }),
                   
                   group([
                       // Leave go Bye Bye
                       query(':leave', [
                           animate('0.15s cubic-bezier(.35,0,.25,1)', 
+
                           style({ transform: 'translateX(100%)' })),
                       ], { optional: true }),
                       // Enter

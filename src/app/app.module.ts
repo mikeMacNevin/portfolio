@@ -23,7 +23,7 @@ import { IntroComponent } from './components/home/intro/intro.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { HomeProjectsComponent } from './components/home/home-projects/home-projects.component';
 import { ResumeComponent } from 'src/app/components/resume/resume.component';
-// import { ContactComponent } from './components/contact/contact.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 // import {MessageToMikeService } from './components/services/message-to-mike.service';
 
@@ -73,7 +73,7 @@ const appRoutes: Routes =  [
     SkillsComponent,
     HomeProjectsComponent,
     ResumeComponent,
-    // ContactComponent,
+    ContactComponent,
     FooterComponent,
     
   ],
@@ -81,9 +81,9 @@ const appRoutes: Routes =  [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule,
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireDatabaseModule,
+    // AngularFireAuthModule,
     RouterModule.forRoot(appRoutes), 
     MDBBootstrapModule.forRoot()
   ],

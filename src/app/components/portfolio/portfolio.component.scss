@@ -1,4 +1,22 @@
 
+@media screen and (max-width: 576px) {
+
+    .col-md-6 {
+        .card-image {
+            margin-top: 3rem !important;
+        }
+    }
+
+}
+
+@media screen and (max-width: 478px) {
+
+    .portfolio-container {
+        width:80%;
+        margin: 0 auto;
+    }
+}
+
 p {
     font-family: Raleway sans-serif;
 }
@@ -11,45 +29,126 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.card-image {
-    height:36vh
+// .card-image {
+//     height:43vh
+// }
+
+.card-image > .layer {
+   
+        background-color: rgba(49, 27, 146, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
 }
 
-.card-image > button {
+.card-image > div > button {
     border: 0;
+    background-color: transparent;
     padding: 0;
     cursor: pointer;
-
-
 }
 
 
 
 h3 {
-    color:white;
+    color: rgba(49, 27, 146,1);
     font-size:2.7rem;
 }
 
+h3.hover-title {
+    color:white;
+}
+
+.btn-link {
+    background-color:rgba(49, 27, 146,1);
+    color:white !important;
+}
+
 .muvy-card {
-    background: url('/assets/muvy-wide.jpg');
+    height: 52vh;
+    // background: url('/assets/muvy-wide.jpg');
+    background: url('/assets/projects-muvyninja.jpg');
+
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 3px;
     border-top-right-radius:3px;
+    background-position: center;
+
 
 }
 .who-card {
-    background: url('/assets/whoreps.png');
+    height: 34vh;
+    background: url('/assets/projects-whoreps.jpg');
+    // background: url('/assets/whorepsyou.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .ev-card{
+    height: 34vh;
 
-    background: url('/assets/ev.png');
+    // background: url('/assets/ev.jpg');
+    background: url('/assets/projects-ev.jpg');
+
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }   
+@media screen and (max-width: 768px) {
+    .muvy-row {
+       margin-bottom: 0.5rem; 
+    }
+
+    .row {
+        .col-12 {
+            h3 {
+                font-size:1.5rem;
+            }
+        }
+        .col-6 {
+            .card-image {
+                height: 150px;
+                h3 {
+                    font-size:1.5rem;
+                }
+            }
+        }
+    }
+
+    .who-card {
+        // background: url('/assets/who-tablet.jpg');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // border-width: 2px 2px 4px 4px;
+        // border-color: rgba(49, 27, 146,1);
+        // border-style: solid;
+    }
+    .ev-card {
+        // background: url('/assets/ev-tablet.jpg');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // border-width: 2px 4px 4px 2px;
+        // border-color: rgba(49, 27, 146,1);
+        // border-style: solid;
+    }
+    .col-6 {
+        max-height: 50%;
+    }
+    .ev-col {
+        padding-right:5px;
+    }
+    .who-card {
+        padding-left:5px;
+    }
+    .card-image {
+        max-height: 21vh;
+    }
+}
 
 .card-image {
     margin-left: 0;
@@ -61,9 +160,41 @@ h3 {
 }
 
 td {
-    font-size:2rem;
+    font-size:1.5rem;
 }
 td >img {
-    max-width:100px;
+    max-width:70px;
 }
 
+/* Disable WowJS on TABLET and DEKSTOP*/
+@media only screen and (min-width : 768px) {
+
+	.wow {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+        animation: none !important;
+        
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .portfolio-container {
+        width: 301.6px;
+    }
+}

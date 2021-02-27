@@ -16,14 +16,15 @@
  -->
 
 
-<div class="home-projects-div my-4">
+<!-- <div class="home-projects-div my-4 wow fadeInUp">
     
   <div class="container">
       <h2 class="mb-2">Recent Projects</h2>
 
     
         <div class="projects-container container-fluid card-deck">
-          <div class="card view overlay "   *ngFor="let site of sites"  [ngStyle]="{'background': ' url(' + site.image + ') no-repeat', 'background-size': 'cover' }">         
+           <div class="card view overlay "   *ngFor="let site of sites"  [ngStyle]="{'background': ' url(' + site.image + ') no-repeat', 'background-size': 'contain', 'background-position': 'center center' }">          -->
+            <!-- <div class="card view overlay mt-2"   *ngFor="let site of sites"  [ngStyle]="{'background': ' url(' + site.image + ') no-repeat fixed center '}">         
               <button type="button" data-toggle="modal"  [attr.data-target]="'#' + site.count + 'modal'">
                 <div class="mask deep-purple lighten-4 ">
                   <h3>{{site.title}}</h3>
@@ -67,13 +68,13 @@
           </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <a href={{site.link}}> <button type="button" class="btn btn-secondary">Visit Site</button></a>
+          <a href={{site.link}} target="_blank"> <button type="button" class="btn btn-secondary">Visit Site</button></a>
         </div>
       </div>
     </div>
   </div>
 
-</div>
+</div> --> 
 
 
 

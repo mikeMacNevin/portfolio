@@ -1,5 +1,11 @@
 @import '../../../assets/master';
 
+
+.resume-container {
+	height: 86vh;
+	justify-content: center;
+
+}
 p {
     font-size: 1.5rem;
 }
@@ -11,4 +17,37 @@ button {
 
 img {
     height: 65vh;
+}
+
+
+
+/* Disable WowJS on TABLET and DEKSTOP*/
+@media only screen and (min-width : 576px) {
+
+	.wow {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+
+@media only screen and (max-width : 576px) {
+	.resume-container {
+		justify-content: start !important;
+	}
 }

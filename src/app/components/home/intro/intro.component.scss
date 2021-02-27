@@ -4,23 +4,25 @@
 }
 
 
-
-
 .intro-div {
+    margin-bottom: 1rem;
+    .img-holder {
+        height: 60.04556%;
+    }
+
     p {
         color: white;
         padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 2px;
+        padding-right: 2px;
         text-align:center;
+        margin-bottom: 0;
     }
     
     h4 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-top: 0;
     }
-
-   
 
     .card-text {
         margin-bottom:0;
@@ -30,9 +32,9 @@
         font-weight: bold;
         text-align: center;
         color:white;
-        margin-top:20px;
         // color: #1de9b6;
         font-family: Bitter, serif;
+        margin-bottom: 0;
     }
 
     .card-body {
@@ -60,7 +62,27 @@
         border-radius: 70%;
     }
 
+    h4 {
+        margin-bottom: 0;
+    }
     
+    .fa {
+        font-size: 3rem;
+        margin-left:0.2rem;
+        margin-right:0.2rem;
+    }
+    
+    .fa-facebook-official {
+        color: rgba(66, 103, 178, 0.4);
+    }
+    
+    .fa-github {
+        color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .fa-envelope {
+        color: rgba(212,70,56, 0.3);
+    }
 
 }
 
@@ -73,9 +95,10 @@
         margin-right: 0;
     }
     .intro-div {
-        padding: 0 10px;
-        max-width:80%;
-        margin: 0 auto;
+
+        p {
+            font-size:1rem;
+        }
     }
     .card-title {
         text-align: center;
@@ -83,34 +106,57 @@
 
     .card-body {
         font-size: 1.5rem;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
     }
 }
 
 
 @media screen and (min-width: 768px ) {
     .intro-div {
-       
-    }
+       .card {
 
+           .card-body {
+               padding-left: 0.5rem;
+               padding-right: 0.5rem;
+               .card-title {
+                }
+                p {
+                    padding-top: 0.5rem;
+                    font-size: 1rem;
+                }
+           }
+       }
+    }
+    .card, .intro-div {
+        height: 86vh;
+    }    
     .view .mask {
-        min-height: 200px;
+        min-height: 300px;
     }
 
-    .intro-div .card .card-body  p {
-        padding: 15px 0;
-        margin:0 auto;
-        font-size: 1.2rem !important;
-    }
 }
  
 
 @media screen and (max-width: 768px ) {
-    .card, .intro-div {
-        height: 35vh;
+    .intro-div {
+        .card {
+            margin: 0 auto;
+            width: 301.6px;
+
+        }
+        p {
+            font-size: 0.8rem;
+            width:80%;
+            margin: 0 auto;
+        }
+        h4 {
+            font-size: 1rem;
+        }
     }
     
     .rgba-white-slight.waves-light {
-        max-height:300px;
+        min-height:300px;
     }
     h2.text-right {
         margin-top: 15px;
@@ -119,15 +165,18 @@
 }
 
 
-.card, .intro-div {
-    height: 72vh;
+@media screen and (max-width: 576px ) {
+    .rgba-white-slight.waves-light {
+        min-height:300px;
+    }
 }
 
+@media screen and (min-width: 576px ) and (max-width: 768px) {
 
-@media screen and (min-width: 992px ) {
-
-
-
-
+    .intro-div {
+        .card {
+           max-height: 70vh
+        }
+    }
 
 }
