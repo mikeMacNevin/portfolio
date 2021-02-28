@@ -1,3 +1,25 @@
+@import "../../../assets/master";
+
+
+.modal-container {
+  table {
+
+      h6 {
+        font-family: Roboto, sans-serif;
+
+      }
+
+  }
+
+    .btn-link {
+        background-color:rgba(49, 27, 146,1);
+        color: $off-white !important;
+    }
+    .btn-link:active, .btn-link:active, .btn-link:active {
+        color: $theblue;
+        background-color: transparent;
+    }
+}
 
 @media screen and (max-width: 576px) {
 
@@ -16,6 +38,7 @@
         margin: 0 auto;
     }
 }
+
 
 p {
     font-family: Raleway sans-serif;
@@ -59,13 +82,10 @@ h3 {
 }
 
 h3.hover-title {
-    color:white;
+    color: $off-white;
 }
 
-.btn-link {
-    background-color:rgba(49, 27, 146,1);
-    color:white !important;
-}
+
 
 .muvy-card {
     height: 52vh;
@@ -159,11 +179,13 @@ h3.hover-title {
     background-color: rgba(49, 27, 146,0.7) !important;
 }
 
+
+
 td {
-    font-size:1.5rem;
+    font-size:1rem;
 }
 td >img {
-    max-width:70px;
+    max-width:40px;
 }
 
 /* Disable WowJS on TABLET and DEKSTOP*/

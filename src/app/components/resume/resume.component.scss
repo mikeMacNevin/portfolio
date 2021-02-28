@@ -7,16 +7,16 @@
 
 }
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 button {
     background-color: $mid-purple;
-    color:white;
+    color:$light-green;
 }
 
 img {
-    height: 65vh;
+    height: 75vh;
 }
 
 
@@ -49,5 +49,9 @@ img {
 @media only screen and (max-width : 576px) {
 	.resume-container {
 		justify-content: start !important;
+		img {
+			height: 55vh;
+		}
 	}
+
 }

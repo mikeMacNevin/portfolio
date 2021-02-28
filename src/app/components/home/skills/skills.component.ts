@@ -15,48 +15,48 @@ export class SkillsComponent implements OnInit {
   constructor() { 
     this.skills = [{
         tech: "Javascript",
-        numb: "72"
+        numb: "82"
       },
       {
         tech: "HTML/CSS",
-        numb: "68"
+        numb: "78"
       },
       {
         tech: "Node.js",
-        numb: "65"
+        numb: "75"
       },
       {
         tech: "React",
-        numb: "65"
+        numb: "75"
       },
       {
         tech: "Angular",
-        numb: "60"
+        numb: "70"
       },
 
       {
         tech: "Bootstrap",
-        numb: "60"
+        numb: "70"
       },
       {
         tech: "JQuery",
-        numb: "59"
+        numb: "69"
       },
       {
         tech: "Java",
-        numb: "50"
+        numb: "60"
       },
       {
         tech: "Wordpress",
-        numb: "44"
+        numb: "54"
       },
       {
         tech: "Photoshop",
-        numb: "42"
+        numb: "52"
       },    
       {
         tech: "PHP",
-        numb: "40"
+        numb: "50"
       },
       {
         tech: "Dancing",

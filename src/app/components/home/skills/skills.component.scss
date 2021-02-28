@@ -13,6 +13,8 @@ h2 {
 .progress-container {
     height: auto;
     .progress {
+        border-radius: 0;
+
         background-color: white;
         width:90%;
         margin: 0 auto 1vh auto;
@@ -23,7 +25,7 @@ h2 {
             width: 20%;
             font-size: 1rem;
             font-weight: bold;
-            color: $dark-blue;
+            // color: $dark-blue;
             padding-left: 5px;
             padding-right: 2rem;
             text-align: center;
@@ -40,8 +42,11 @@ h2 {
         .progress-bar {
             // background-color: $light-purple;
             height: 5vh;
-            color: $mid-purple;
-            background-color: #4E61B4;
+            color: $light-green;
+            background-color: $light-green;
+            // border-top-right-radius: 7px;
+            // border-bottom-right-radius: 7px;
+            border-radius: 7px;
         }
     }
  }
@@ -64,13 +69,15 @@ h2 {
         .progress {
             text-align: center;
             height: 25px;
-            width:100;
+            width:301px;
             .progress-label {
-                margin-left:2rem;
+                margin-right: 0.2rem;
                 font-size: 0.8rem;
                 height: 25px;
+                padding-left: 0;
             }
             .progress-bar {
+                margin-left: 4px;
                 height: 25px;
             }
         }
@@ -81,10 +88,10 @@ h2 {
 
     .progress-container {
         .progress {
-        
             .progress-label {
                 font-size: 0.6rem;
                 height: 15px;
+                margin-left: 0;
                 p {
                     padding-top: 0;
                 }
@@ -120,4 +127,15 @@ h2 {
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+}
+
+@media only screen and (min-width : 992px) {
+    .progress-container {
+        .progress {
+            .progress-label {
+                padding-right: 0.5rem;
+            }
+        }
+    }
+
 }

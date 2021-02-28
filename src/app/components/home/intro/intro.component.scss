@@ -6,20 +6,30 @@
 
 .intro-div {
     margin-bottom: 1rem;
+    hr {
+        border: 1.5px solid $light-green;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
     .img-holder {
         height: 60.04556%;
     }
 
     p {
-        color: white;
+        // color: $light-green;
         padding-top: 15px;
         padding-left: 2px;
         padding-right: 2px;
         text-align:center;
         margin-bottom: 0;
+        color: white;
+
     }
     
     h4 {
+        color: white;
+
         font-size: 1.5rem;
         margin-top: 0;
     }
@@ -31,16 +41,18 @@
     .card-title {
         font-weight: bold;
         text-align: center;
-        color:white;
         // color: #1de9b6;
         font-family: Bitter, serif;
         margin-bottom: 0;
     }
 
     .card-body {
+        padding-top:0.5rem;
+        padding-bottom: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
     
     .intro-button {
@@ -54,11 +66,11 @@
     a >  button {
         background-color: $mid-purple;
         margin: 0 auto;
-        color: white;
+        color: $off-white
     }
     .btn-git {
         background-color: $github;
-        color:white;
+        color:$off-white;
         border-radius: 70%;
     }
 
@@ -67,7 +79,7 @@
     }
     
     .fa {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-left:0.2rem;
         margin-right:0.2rem;
     }
@@ -77,11 +89,16 @@
     }
     
     .fa-github {
-        color: rgba(255, 255, 255, 0.4);
+        // color: rgba(255, 255, 255, 0.4);
+        color:$light-green;
+
     }
     
     .fa-envelope {
-        color: rgba(212,70,56, 0.3);
+        // color: rgba(212,70,56, 0.3);
+        // color: rgba(255, 255, 255, 0.4); 
+        color:$light-green;
+
     }
 
 }
@@ -122,7 +139,7 @@
                .card-title {
                 }
                 p {
-                    padding-top: 0.5rem;
+                    padding-top: 0.1rem;
                     font-size: 1rem;
                 }
            }
