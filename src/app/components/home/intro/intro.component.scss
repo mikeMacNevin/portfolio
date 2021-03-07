@@ -5,7 +5,7 @@
 
 
 .intro-div {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     hr {
         border: 1.5px solid $light-green;
         width: 100%;
@@ -114,7 +114,7 @@
     .intro-div {
 
         p {
-            font-size:1rem;
+            font-size:0.8rem;
         }
     }
     .card-title {
@@ -132,6 +132,9 @@
 @media screen and (min-width: 768px ) {
     .intro-div {
        .card {
+        .img-holder {
+            height: 60.04556%;
+        }
 
            .card-body {
                padding-left: 0.5rem;
@@ -140,7 +143,7 @@
                 }
                 p {
                     padding-top: 0.1rem;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                 }
            }
        }
@@ -192,8 +195,16 @@
 
     .intro-div {
         .card {
-           max-height: 70vh
+           max-height: 86vh
         }
     }
 
+}
+
+@media screen and (min-width: 1200px ) {
+    .intro-div {
+        h4 {
+            font-size: 1.3rem;
+        }
+    }
 }

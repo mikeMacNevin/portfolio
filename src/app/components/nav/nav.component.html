@@ -3,17 +3,20 @@
   <nav class="navbar navbar-light deep-purple darken-4 px-0">
     <div class="container px-0 d-flex flex-row">
           <div class="d-flex brand-div flex-column justify-content-center align-items-center">
-            <a class="navbar-brand mx-0" href="#"><img src="/assets/logo-white.png" /></a>
+            <!-- <a class="navbar-brand mx-0" href="#"><img src="/assets/logo-green.png" /></a> -->
+            <h1>Michael MacNevin</h1>
           </div>
           <div class="">
             <div class="navbar-nav dropdown-menu-right justify-content-center flex-row d-none text-right d-sm-none d-md-block">
-              <a class="nav-item"  href="#" routerLinkActive="routerlinknow" [routerLink]="['']">
+              
+              <a class="nav-item third" href="#" routerLinkActive="routerlinknow" [routerLink]="['']">
+                <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>Projects</button>
+              </a>
+              <a class="nav-item"  href="#"  [routerLink]="['/skills']">
                   <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Skills&nbsp;</button>
                   <span class="sr-only">(current)</span>
               </a>
-              <a class="nav-item third"  href="#"  [routerLink]="['/projects']">
-                <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>Projects</button>
-              </a>
+
               <a class="nav-item third"  href="#"  [routerLink]="['/resume']">
                 <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Resume&nbsp;</button>
               </a>

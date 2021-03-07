@@ -36,9 +36,9 @@ const appRoutes: Routes =  [
 
   {
     path:'', 
-    component: SkillsComponent,
+    component: PortfolioComponent,
     data: {
-      state: 'skills'
+      state: 'portfolio'
       }  
     },
     {
@@ -49,10 +49,10 @@ const appRoutes: Routes =  [
       }  
     },
     {
-      path:'projects', 
-      component: PortfolioComponent,
+      path:'skills', 
+      component: SkillsComponent,
       data: {
-        state: 'projects'
+        state: 'skills'
         }  
       }
     // {

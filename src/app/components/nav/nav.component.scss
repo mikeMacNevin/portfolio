@@ -9,9 +9,14 @@ button {
 
 nav {
     background-color: $light-purple;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding-top: 0px;
     padding-bottom: 0px;
+    h1 {
+        font-family: Bitter, serif;
+        color: $light-green;
+        margin-bottom: -5px;
+    }
     .container {
         max-width: 90%
     }
