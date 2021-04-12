@@ -1,8 +1,8 @@
 <!-- animated fadeInRightBig wow --> 
 <div class="skills-div wow fadeInUp" data-wow-duration="2s">
   <!-- <h2>Web Technologies</h2> -->
-  <div class="progress-container d-flex flex-column justify-content-center">
-    <div *ngFor="let skill of skills" class="progress">
+  <div class="progress-container d-flex flex-column ">
+  <div *ngFor="let skill of skills" class="progress ">
       <div class="progress-label"><p><strong>{{skill.tech}}</strong></p> </div> 
       <div class="progress-bar "  role="progressbar" [style.width.%]="skill.numb" aria-valuemin="0" aria-valuemax="100"></div>
     </div>

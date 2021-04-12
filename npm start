@@ -1,0 +1,47 @@
+[33mcommit f7028a47b90590c35f5ebfa3d00c060c983ebaa9[m[33m ([m[1;36mHEAD -> [m[1;32mcontact-form[m[33m)[m
+Author: mikeMacNevin <mikemacnevin@gmail.com>
+Date:   Sun Mar 7 17:08:01 2021 -0500
+
+    added green coloring
+
+[33mcommit 080fa4963b781d22287956944596d5f27bf35763[m[33m ([m[1;31morigin/contact-form[m[33m)[m
+Author: mikeMacNevin <mikemacnevin@gmail.com>
+Date:   Sun Feb 28 18:20:16 2021 -0500
+
+    before adding contact
+
+[33mcommit e66272195edffc475bf150552f63bf45944e3f5f[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: mikeMacNevin <mikemacnevin@gmail.com>
+Date:   Sat Feb 27 14:25:07 2021 -0500
+
+    column resizing and fixed tablet view intro-div
+
+[33mcommit af0705540fd334844bc3306ff72ad1756d0d63e1[m
+Author: Mike MacNevin <mikemacnevin@gmail.com>
+Date:   Thu Sep 3 21:05:34 2020 -0400
+
+    heroku2
+
+[33mcommit 9f7cb0c100e990cd21ee777e78e4728e811352f1[m
+Author: Mike MacNevin <mikemacnevin@gmail.com>
+Date:   Thu Sep 3 20:08:03 2020 -0400
+
+    heroku
+
+[33mcommit a22ebdf702d3c6060915ac65f6d0ae86c4fc34b2[m
+Author: Mike MacNevin <mikemacnevin@gmail.com>
+Date:   Tue Sep 1 23:45:38 2020 -0400
+
+    package.json updated
+
+[33mcommit 584608565215f275ff8ffebdf29059ce18a1bf9c[m
+Author: Mike MacNevin <mikemacnevin@gmail.com>
+Date:   Tue Sep 1 23:34:29 2020 -0400
+
+    new heroku push
+
+[33mcommit 19af1e642db9413b3bad5c792d40cae986d0010f[m
+Author: Mike MacNevin <mikemacnevin@gmail.com>
+Date:   Sat Aug 15 11:27:04 2020 -0400
+
+    new git - first commit

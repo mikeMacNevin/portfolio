@@ -12,36 +12,37 @@ h2 {
 }
 .progress-container {
     height: auto;
+    margin-left: 0;
     .progress {
         border-radius: 0;
-
+        height: 1.3rem;
         background-color: white;
         width:90%;
-        margin: 0 auto 1vh auto;
-        height: 5.09vh;
-        
+        margin: 0;
+        align-items:center;
 
         .progress-label {
             width: 20%;
-            font-size: 1rem;
+            font-size: 0.7rem;
             font-weight: bold;
             // color: $dark-blue;
-            padding-left: 5px;
             padding-right: 2rem;
-            text-align: center;
+            text-align: left;
             // font-family: "Domine", serif;
             p   {
                 vertical-align: middle;
                 padding-top: 5px;
                 color: $theblue;
                 font-weight: bold;
+                margin-bottom: 0;
+
 
             }
         }
 
         .progress-bar {
             // background-color: $light-purple;
-            height: 5vh;
+            height: 2vh;
             color: $light-green;
             background-color: $light-green;
             // border-top-right-radius: 7px;
@@ -53,7 +54,7 @@ h2 {
 
  @media screen and (min-width: 768px) {
     .progress-container {
-        height: 86vh;
+        height: 40vh;
     }
 
     
@@ -65,7 +66,8 @@ h2 {
         margin-bottom: 15px;
     }
     .progress-container {
-        margin-bottom:5rem;
+        justify-content: center;
+        align-items: center;
         .progress {
             text-align: center;
             height: 25px;
@@ -75,10 +77,12 @@ h2 {
                 font-size: 0.8rem;
                 height: 25px;
                 padding-left: 0;
+                margin-bottom: 0;
             }
             .progress-bar {
                 margin-left: 4px;
-                height: 25px;
+
+                height: 15px;
             }
         }
     }

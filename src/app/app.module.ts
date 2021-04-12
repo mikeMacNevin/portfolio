@@ -23,7 +23,7 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { PortfolioComponent } from './components/home/portfolio/portfolio.component';
 import { IntroComponent } from './components/home/intro/intro.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { HomeProjectsComponent } from './components/home/home-projects/home-projects.component';
@@ -34,11 +34,17 @@ import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes =  [
 
-  {
-    path:'', 
+
+  //r
+  { path: '',   redirectTo: '/skills', pathMatch: 'full' },
+
+    {
+
+
+    path:'projects', 
     component: PortfolioComponent,
     data: {
-      state: 'portfolio'
+      state: 'projects'
       }  
     },
     {
