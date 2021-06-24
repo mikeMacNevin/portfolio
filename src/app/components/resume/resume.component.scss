@@ -2,9 +2,44 @@
 
 
 .resume-container {
-	height: 86vh;
 	justify-content: flex-start;
+	height:100%;
+	h4 {
+		display:none;
+	}
 
+	.resume-div {
+		background: url("../../../assets/resume.jpg") no-repeat center center;
+		background-size: 100% 100%; 
+		height: 100%;
+	}
+	.social-links {
+		text-align: center;
+        a {
+			vertical-align: top;
+
+			color: $light-green;
+			font-size: 2.5rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+        }
+    }
+
+	.layer {
+		background-color: rgba(49, 27, 146, 0.1);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;		
+	}
+	.view {
+		width: auto;
+	}
+	.mask {
+		background-color: rgba(49, 27, 146,0.7) !important;
+		width: auto;
+	}
 }
 p {
     font-size: 1rem;
@@ -16,16 +51,14 @@ button {
 }
 
 
-
-img {
-    height: 66vh;
-}
-
-
-
 /* Disable WowJS on TABLET and DEKSTOP*/
 @media only screen and (min-width : 576px) {
-
+	.resume-container {
+		padding-left: 5px;
+	}
+	.resume-div {
+		min-height: 90vh;
+		}
 	.wow {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
@@ -51,15 +84,19 @@ img {
 @media only screen and (max-width : 576px) {
 	.resume-container {
 		justify-content: start !important;
-		img {
-			height: 55vh;
+		width: 95%;
+		margin: 0 auto;
+		padding:0;
+		h4 {
+			display:  block;
+			margin-top: 2rem;
+			font-family: "Roboto" sans-serif !important;
+
+			color:rgba(49, 27, 146,1);
+			margin-bottom:0.1rem;
 		}
 	}
-
-}
-
-@media only screen and (min-width : 768px) {
-	.resume-container {
-		padding-left: 0;
+	.resume-div {
+	min-height: 80vh;
 	}
 }

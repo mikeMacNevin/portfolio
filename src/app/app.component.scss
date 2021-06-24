@@ -4,7 +4,9 @@
 
 
 .app-container {
-    
+	.row {
+	}
+
 }
 
 p {
@@ -26,6 +28,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+@media screen and (max-width: 576px) {
+    .app-container {
+    }
+}
+
 
 @media screen and (max-width: 992px) {
     .app-container {
@@ -33,13 +40,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+
 @media only screen and (min-width : 576px) {
 	.app-container {
-		max-width: 99%;
-		margin-left:15px;
-		margin-right:5px;
-
+		padding-left: 0;
+		padding-right: 1rem; 
+		padding-top: 0;
+		min-height: 95%;
+		
     }
+
 	.wow {
 		/*CSS transitions*/
 		-o-transition-property: none !important;

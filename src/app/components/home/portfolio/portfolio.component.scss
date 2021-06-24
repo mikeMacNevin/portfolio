@@ -1,5 +1,9 @@
 @import "../../../../assets/master";
 
+h4 {
+    color:rgba(49, 27, 146,1)
+}
+
 .fade.in {
     opacity: 1;
   }
@@ -37,7 +41,9 @@
 }
 
 @media screen and (max-width: 576px) {
-
+    .portfolio-container{
+        max-width: 95%;
+    }
     .col-md-6 {
         .card-image {
             margin-top: 3rem !important;
@@ -47,7 +53,6 @@
 
 @media screen and (max-width: 478px) {
     .portfolio-container {
-        width:80%;
         margin: 0 auto;
     }
 }
@@ -57,7 +62,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Bitter serif;
+    font-family: "Roboto" sans-serif !important;
 }
 .col-6, .col-12 {
     padding: 0;
@@ -66,6 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 // .card-image {
 //     height:43vh
 // }
+
+
 
 .card-image > .layer {   
     background-color: rgba(49, 27, 146, 0.1);
@@ -87,41 +94,40 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
     color: rgba(49, 27, 146,1);
-    font-size:2.7rem;
 }
 
 h3.hover-title {
     color: $off-white;
+    font-size: 1.2rem;
 }
 
 
 
 .muvy-card {
-    height: 16vh;
+    height: 25vh;
     // background: url('/assets/muvy-wide.jpg');
     background: url('/assets/projects-muvyninja.jpg');
 
     background-size: cover;
     background-repeat: no-repeat;
-    border-top-left-radius: 3px;
-    border-top-right-radius:3px;
+
     background-position: center;
 
-    margin-bottom: 2px;
 
 
 }
 .who-card {
-    height: 16vh;
+    height: 25vh;
     background: url('/assets/projects-whoreps.jpg');
     // background: url('/assets/whorepsyou.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .ev-card{
-    height: 16vh;
+    height: 25vh;
 
     // background: url('/assets/ev.jpg');
     background: url('/assets/projects-ev.jpg');
@@ -129,11 +135,10 @@ h3.hover-title {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }   
-@media screen and (max-width: 768px) {
-    .muvy-row {
-       margin-bottom: 0.5rem; 
-    }
+@media screen and (max-width: 576px) {
+
 
     .row {
         .col-12 {
@@ -201,7 +206,9 @@ td >img {
 
 /* Disable WowJS on TABLET and DEKSTOP*/
 @media only screen and (min-width : 576px) {
-
+    .portfolio-container {
+        margin-top:2rem;
+    }
 	.wow {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
@@ -223,11 +230,21 @@ td >img {
         animation: none !important;
         
         visibility: visible;
+
     }
+
+    .mid-column {
+        padding: 0 5px;
+    }
+
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 576px) {
     .portfolio-container {
-        width: 301.6px;
+
+
+        .card-image {
+            margin-bottom: 0.5rem;
+        }
     }
 }

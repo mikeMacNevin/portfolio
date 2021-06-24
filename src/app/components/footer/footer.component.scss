@@ -1,28 +1,21 @@
 @import '../../../assets/master';
 
 
-div {
-    color: rgba(49, 27, 146,0.5);
+span {
+    color: $mid-purple;
+    a {
+        color: $mid-purple;
+        font-size: 3rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        i {
+            transition: 0.3s;
+
+        }
+        i:hover {
+            color: $light-purple;
+        }
+    }
+
 }
 
-h4 {
-    margin-bottom: 0;
-}
-
-.fa {
-    font-size: 2.5rem;
-    margin-left:0.2rem;
-    margin-right:0.2rem;
-}
-
-.fa-facebook-official {
-    color: rgba(66, 103, 178, 0.8);
-}
-
-.fa-github {
-    color: rgba(36, 41, 46, 0.8);
-}
-
-.fa-envelope {
-    color: rgba(212,70,56, 0.5);
-}

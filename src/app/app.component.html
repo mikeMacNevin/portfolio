@@ -19,22 +19,28 @@
   </div> -->
 
   <div class="container-fluid app-container">
-    <div class="row"> 
-      <div class="col-md-7 px-0">
-        <app-skills></app-skills>
-        <app-portfolio></app-portfolio>
+      <div class="row">
+        
+        <div class="col-sm-6 col-md-6 pl-0 d-none d-sm-block">
+          <app-resume></app-resume>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 px-0">
+          <app-skills></app-skills>
+          <app-portfolio></app-portfolio>
+        </div>
+        
+        <!-- resume if mobile-->
+        <div class= "col-12 d-block d-sm-none h-100 px-0">
+          <app-resume></app-resume>
 
+        </div>
       </div>
-      <div class="col-md-5 pl-0">
-        <app-resume></app-resume>
-      </div>
+  
 
-    </div>
   </div>
+<!--
+  <div class="container-fluid mobile-container 	d-block .d-sm-none">
 
-  <div class="container-fluid mobile-container d-block d-md-none">
-
-    <app-intro></app-intro>
     <h2 class="text-center mt-4 wow fadeInDown" data-wow-duration="2s">Projects</h2>
     <app-portfolio></app-portfolio>
     <h2 class="text-center mt-4 wow fadeInDown" data-wow-duration="2s">Skills</h2>
@@ -42,6 +48,7 @@
 
     <h2 class="text-center mt-4 wow fadeInDown" data-wow-duration="2s">Resume</h2>
       <app-resume></app-resume>
+  </div>
 
-</div>
+-->
   <app-footer></app-footer>
