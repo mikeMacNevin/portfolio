@@ -1,4 +1,4 @@
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit, Renderer2, ElementRef } from '@angular/core';
 
 import { AppModule } from './app.module';
 import { SkillsComponent } from './components/home/skills/skills.component';
@@ -53,7 +53,7 @@ export class AppComponent {
   }
 
 
-constructor(private router: Router) { }
+constructor(private router: Router, private renderer2: Renderer2, private elementRef: ElementRef) { }
 
 
  ngOnInit() {
@@ -63,8 +63,14 @@ constructor(private router: Router) { }
             }
             window.scrollTo(0, 0)
         });
+
     }
 
+  ngAfterViewInit() {
+    // let modalDivs = this.elementRef.nativeElement.querySelectorAll('.modal-container').clone()
+    // let mobileContainer = this.elementRef.nativeElement.querySelectorAll('.mobile-container')
+    // this.renderer2.appendChild(mobileContainer, modalDivs)
+  }
 }
 
 

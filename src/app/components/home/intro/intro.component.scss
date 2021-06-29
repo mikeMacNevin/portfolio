@@ -1,6 +1,7 @@
 @import '../../../../assets/master';
 .card {
-    background-color: $light-purple;
+    background-color: $off-white;
+    box-shadow: none;
 }
 
 
@@ -19,8 +20,8 @@
     p {
         // color: $light-green;
         padding-top: 15px;
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 8%;
+        padding-right: 8%;
         text-align:center;
         margin-bottom: 0;
         color: white;
@@ -47,11 +48,12 @@
     }
 
     .card-body {
-        padding-top:0.5rem;
+        padding-top:0;
         padding-bottom: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         
     }
     
@@ -133,7 +135,7 @@
     .intro-div {
        .card {
         .img-holder {
-            height: 60.04556%;
+            height: 50vh
         }
 
            .card-body {
@@ -149,7 +151,7 @@
        }
     }
     .card, .intro-div {
-        height: 86vh;
+        height: 82vh;
     }    
     .view .mask {
         min-height: 300px;
@@ -162,12 +164,14 @@
     .intro-div {
         .card {
             margin: 0 auto;
-            width: 301.6px;
-
+            width: 386px;
+            padding-right:2px;
+            .card-body {
+                padding-top: 1rem;
+            }
         }
         p {
             font-size: 0.8rem;
-            width:80%;
             margin: 0 auto;
         }
         h4 {
@@ -186,8 +190,11 @@
 
 
 @media screen and (max-width: 576px ) {
-    .rgba-white-slight.waves-light {
-        min-height:300px;
+    .intro-div {
+
+        .rgba-white-slight.waves-light {
+            min-height:300px;
+        }
     }
 }
 
@@ -195,7 +202,7 @@
 
     .intro-div {
         .card {
-           max-height: 86vh
+           max-height: 82vh
         }
     }
 

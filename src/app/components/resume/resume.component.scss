@@ -13,6 +13,10 @@ p {
 button {
     background-color: $mid-purple;
     color:$light-green;
+	color: $off-white;
+
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 5px 0px, rgba(0, 0, 0, 0.6) 0px 2px 10px 0px
+	0 2px 5px 0 rgba(0,0,0,0.8),0 2px 10px 0 rgba(0,0,0,0.6) ;
 }
 
 
@@ -25,6 +29,10 @@ img {
 
 /* Disable WowJS on TABLET and DEKSTOP*/
 @media only screen and (min-width : 576px) {
+
+	.resume-container {
+		padding-top: 2rem;
+	}
 
 	.wow {
 		/*CSS transitions*/
@@ -48,11 +56,20 @@ img {
 	}
 }
 
+@media only screen and (max-width : 768px) {
+	.resume-container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+
 @media only screen and (max-width : 576px) {
 	.resume-container {
 		justify-content: start !important;
 		img {
-			height: 55vh;
+			height: 77vh;
 		}
 	}
 

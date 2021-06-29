@@ -2,8 +2,8 @@
 
 }
 
+
 .app-container {
-    
 }
 
 p {
@@ -16,11 +16,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-container {
+	
     h2 {
         color: rgb(49, 27, 146);
         font-size: 2rem;
         font-weight: bold;
     }
+
 }
 
 
@@ -56,5 +58,13 @@ h1, h2, h3, h4, h5, h6 {
 		-o-animation: none !important;
 		-ms-animation: none !important;
 		animation: none !important;
+	}
+}
+
+@media only screen and (min-width : 768px) {
+	.app-container {
+		.col-sm-4 {
+			padding-right: 9px;
+		}
 	}
 }

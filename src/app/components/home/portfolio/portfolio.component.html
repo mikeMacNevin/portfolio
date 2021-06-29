@@ -1,10 +1,10 @@
-<div class="container portfolio-container " >
+<div class="container portfolio-container ">
 
-  <div class="row wow fadeInUp muvy-row" data-wow-duration="2s" >
+  <div class="row muvy-row wow fadeInUp" data-wow-duration="2s" >
     <div class="col-12">
-      <div class="card-image muvy-card view overlay  " >
+      <div class="card-image muvy-card view overlay"  >
         <div class="layer">
-        <button type="button" class="" data-toggle="modal"  [attr.data-target]="'#0modal'">
+        <button type="button" class="" data-toggle="modal" [attr.data-target]="'#0modal'">
           <div class="mask deep-purple darken-4 d-flex flex-column justify-content-center ">
             <h3 class="hover-title">Muvy Ninja</h3>
           </div>
@@ -16,7 +16,7 @@
   </div>
   <div class="row wow fadeInUp" data-wow-duration="2s" >
     <div class="col-6 ev-col">
-      <div class="card-image who-card view overlay" > 
+      <div class="card-image who-card view overlay"> 
         <div class="layer">
 
         <button type="button" data-toggle="modal"  [attr.data-target]="'#1modal'">
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="col-6 who-col">
-      <div class="card-image ev-card view overlay" >   
+      <div class="card-image ev-card view overlay " >   
         <div class="layer">
            
         <button type="button" data-toggle="modal"  [attr.data-target]="'#2modal'">
@@ -44,8 +44,8 @@
 
 
 
-  <div class="modal-container" *ngFor="let site of sites" >
-    <div class="modal fade" [attr.id]="site.count + 'modal' " tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-container" *ngFor="let site of sites">
+      <div class="modal fade" [attr.id]="site.count + 'modal' " tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header align-items-center justify-content-center">
@@ -56,7 +56,11 @@
             </div>
             <div class="modal-body d-flex justify-content-center">
               <table>
-                <h6>Tech Stack</h6>
+                <tr>
+                  <td></td>
+                  <td><strong>Tech Stack</strong></td>
+
+                </tr>
                   <tr>
                       <td><img src={{site.tech1}}></td>
                       <td>{{site.techName1}}</td>
@@ -69,10 +73,8 @@
                       <td><img  src={{site.tech3}}></td>
                       <td>{{site.techName3}}</td>
                   </tr>    
-          
               </table>
-     
-              </div>
+            </div>
             <div class="modal-footer justify-content-center">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               <a href={{site.link}} target="_blank"> <button type="button" class="btn btn-link">Visit Site</button></a>

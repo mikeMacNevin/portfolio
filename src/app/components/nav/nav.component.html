@@ -1,20 +1,20 @@
   
   <!-- <mdb-navbar SideClass="navbar navbar-1 navbar-light amber lighten-2" [containerInside]="false"> -->
   <nav class="navbar navbar-light deep-purple darken-4 px-0">
-    <div class="container px-0 d-flex flex-row">
-          <div class="d-flex brand-div flex-column justify-content-center align-items-center">
+    <div class="container row nav-container px-0 d-flex flex-row">
+      
+          <div class="brand-div col col-sm-12 col-md-4 col-lg-3 pl-0 pr-1 ">
             <!-- <a class="navbar-brand mx-0" href="#"><img src="/assets/logo-green.png" /></a> -->
-            <h1>Michael MacNevin</h1>
+            <img src="../../../assets/Name.png">
           </div>
           <div class="">
-            <div class="navbar-nav dropdown-menu-right justify-content-center flex-row d-none text-right d-sm-none d-md-block">
-              
-              <a class="nav-item third" href="#" routerLinkActive="routerlinknow" [routerLink]="['']">
-                <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>Projects</button>
-              </a>
+            <div class="navbar-nav dropdown-menu-right flex-row  justify-content-center flex-row d-none text-right d-sm-none d-md-block">
               <a class="nav-item"  href="#"  [routerLink]="['/skills']">
                   <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Skills&nbsp;</button>
                   <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-item third" href="#" routerLinkActive="routerlinknow" [routerLink]="['/projects']">
+                <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>Projects</button>
               </a>
 
               <a class="nav-item third"  href="#"  [routerLink]="['/resume']">
@@ -27,7 +27,12 @@
 <!-- </mdb-navbar> -->
 
 
-
+<!-- 
+<div class="social-div pt-1">
+  <a href ="mailto: mikemacnevin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  <a href="https://github.com/mikeMacNevin?tab=repositories"><i class="fa fa-github" aria-hidden="true"></i></a> -->
+  <!-- <a href="https://www.facebook.com/michaelmacnevin"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> -->
+<!-- </div> -->
 
 <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div class="navbar-nav   dropdown-menu-right text-right ml-auto ">
@@ -40,7 +45,7 @@
     <a class="nav-item nav-link third"  href="#"  [routerLink]="['/resume']">
       <button type="button"  size="md" mdbBtn class="deep-purple darken-4" mdbWavesEffect>&nbsp;Resume&nbsp;</button>
     </a>
-    <!-- <a class="nav-item nav-link" href="#" [routerLink]="['/contact']">
+    <a class="nav-item nav-link" href="#" [routerLink]="['/contact']">
       <button type="button"  size="md" mdbBtn color="secondary-color" mdbWavesEffect>Contact</button>
     </a> -->
   <!-- </div>
