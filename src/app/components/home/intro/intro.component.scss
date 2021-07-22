@@ -30,7 +30,7 @@
     
     h4 {
         color: white;
-
+        font-family: Roboto;
         font-size: 1.5rem;
         margin-top: 0;
     }
@@ -180,7 +180,7 @@
     }
     
     .rgba-white-slight.waves-light {
-        min-height:300px;
+        max-height:250px;
     }
     h2.text-right {
         margin-top: 15px;
@@ -193,7 +193,6 @@
     .intro-div {
 
         .rgba-white-slight.waves-light {
-            min-height:300px;
         }
     }
 }

@@ -1,7 +1,7 @@
 <div class="container portfolio-container ">
 
   <div class="row muvy-row wow fadeInUp" data-wow-duration="2s" >
-    <div class="col-12">
+    <div class="col-12 muvy-col">
       <div class="card-image muvy-card view overlay"  >
         <div class="layer">
         <button type="button" class="" data-toggle="modal" [attr.data-target]="'#0modal'">
@@ -55,24 +55,22 @@
               </button>
             </div>
             <div class="modal-body d-flex justify-content-center">
-              <table>
-                <tr>
-                  <td></td>
-                  <td><strong>Tech Stack</strong></td>
 
-                </tr>
+              <table>
+                <tbody class="myTbody">  
                   <tr>
-                      <td><img src={{site.tech1}}></td>
-                      <td>{{site.techName1}}</td>
-                  </tr>     
-                  <tr>
-                      <td><img src={{site.tech2}}></td>
-                      <td>{{site.techName2}}</td>
-                  </tr>   
-                  <tr>
-                      <td><img  src={{site.tech3}}></td>
-                      <td>{{site.techName3}}</td>
-                  </tr>    
+                        <td><img src={{site.tech1}}></td>
+                        <td>{{site.techName1}}</td>
+                    </tr>     
+                    <tr>
+                        <td><img src={{site.tech2}}></td>
+                        <td>{{site.techName2}}</td>
+                    </tr>   
+                    <tr>
+                        <td><img  src={{site.tech3}}></td>
+                        <td>{{site.techName3}}</td>
+                    </tr> 
+                  </tbody>
               </table>
             </div>
             <div class="modal-footer justify-content-center">

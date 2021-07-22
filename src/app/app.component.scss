@@ -26,12 +26,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@media screen and (max-width: 992px) {
-    .app-container {
-        max-width: 98%;
-    }
-}
-
 @media only screen and (min-width : 576px) {
 	.app-container {
 		max-width: 99%;
@@ -63,8 +57,23 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width : 768px) {
 	.app-container {
+		margin-left: 5px;
+
 		.col-sm-4 {
 			padding-right: 9px;
 		}
 	}
+}
+
+
+@media screen and (max-width: 992px) {
+    .app-container {
+        max-width: 99%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .app-container {
+        max-width: 99%;
+    }
 }

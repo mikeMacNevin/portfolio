@@ -3,6 +3,13 @@
 .fade.in {
     opacity: 1;
   }
+
+  .modal {
+    h4 {
+        font-family: Roboto sans-serif;
+        white-space: nowrap;
+      }
+  }
   .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
     -o-transform: translate(0, 0);
@@ -14,26 +21,30 @@
 
 .modal-container {
     table {
-      h6 {
-        font-family: Roboto, sans-serif;
-      }
-      td {
-          padding: 0 1rem;
-      }
-      td:first {
-        padding: 0 1rem;
-        vertical-align: bottom;
 
+
+        td{
+            width: 50px;
+        }
+        td {
+            padding: 0 0.1rem;
+        }
+        td:first {
+          padding: 0 1rem;
+          vertical-align: bottom;
+  
+      }
     }
-    }
-    .btn-link {
-        background-color:rgba(49, 27, 146,1);
-        color: $off-white !important;
-    }
-    .btn-link:active, .btn-link:active, .btn-link:active {
-        color: $theblue;
-        background-color: transparent;
-    }
+
+}
+
+.btn-link {
+    background-color:rgba(49, 27, 146,1);
+    color: $off-white !important;
+}
+.btn-link:active, .btn-link:active, .btn-link:active {
+    color: $theblue;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 576px) {
@@ -143,7 +154,7 @@ h3.hover-title {
             padding-left: 0;
             .col-12 {
                 h3 {
-                    font-size:1.5rem;
+                    font-size:1.2rem;
                 }
             }
             .col-6 {
@@ -244,6 +255,5 @@ td >img {
 @media screen and (max-width: 1200px) {
 
     .portfolio-container {
-        margin-lefT:10px;
     }
 }

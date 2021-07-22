@@ -9,7 +9,7 @@
         </div>
         
   
-        <div class="col-12 col-sm-6 col-md-7 col-lg-9 px-0 d-block  ">
+        <div class="col-12 col-sm-6 col-md-8 col-lg-9 px-0 d-block  ">
           <main [@routerTransition]="page.activatedRouteData.state">
             <router-outlet #page="outlet"></router-outlet>
           </main> 
@@ -19,15 +19,54 @@
   </div>
 
   <div class="container-fluid mobile-container d-block d-md-none">
-
     <app-intro></app-intro>
+
+    <!-- <h2 class="text-center mt-4 wow fadeInDown" data-wow-duration="2s">Skills</h2> -->
+    <app-skills></app-skills>
     <h2 class="text-center mt-4 wow fadeInDown" data-wow-duration="2s">Projects</h2>
     <app-portfolio></app-portfolio>
-    <h2 class="text-center mt-4 wow fadeInDown" data-wow-duration="2s">Skills</h2>
-    <app-skills></app-skills>
-
     <h2 class="text-center mt-4 wow fadeInDown" data-wow-duration="2s">Resume</h2>
       <app-resume></app-resume>
 
-</div>
+
+      
+    <div class="modal-container" *ngFor="let site of sites">
+      <div class="modal fade" [attr.id]="site.count + 'modal' " tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header align-items-center justify-content-center">
+              <h3>{{site.title}}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+
+              <table>
+                <tbody class="myTbody">  
+                  <tr>
+                        <td><img src={{site.tech1}}></td>
+                        <td>{{site.techName1}}</td>
+                    </tr>     
+                    <tr>
+                        <td><img src={{site.tech2}}></td>
+                        <td>{{site.techName2}}</td>
+                    </tr>   
+                    <tr>
+                        <td><img  src={{site.tech3}}></td>
+                        <td>{{site.techName3}}</td>
+                    </tr> 
+                  </tbody>
+              </table>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <a href={{site.link}} target="_blank"> <button type="button" class="btn btn-link">Visit Site</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
   <app-footer></app-footer>
