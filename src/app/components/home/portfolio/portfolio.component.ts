@@ -30,7 +30,7 @@ export class PortfolioComponent implements OnInit {
       image: "/",
       title: "Muvy Ninja",
       description: "A Web App for finding your local representatives.  Build with Node, Express, Bootstrap and JQuery.",
-      link: "https://muvyninjamapp.herokuapp.com/",
+      link: "https://muvyninja-5vxuh.ondigitalocean.app/",
       count: "0",
       tech1: "../../../../assets/node.png",
       tech2: "../../../../assets/mongo.jpg",
