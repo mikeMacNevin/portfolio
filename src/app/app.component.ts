@@ -52,7 +52,6 @@ export class AppComponent {
     return outlet.activatedRouteData['page'] || 'one';
   }
 
-
   sites: {
     image: string;
     title: string;
@@ -66,8 +65,6 @@ export class AppComponent {
     techName2: string;
     techName3: string;
   }[]
-
-
 
 constructor(private router: Router, private renderer2: Renderer2, private elementRef: ElementRef) {
   
@@ -111,14 +108,9 @@ constructor(private router: Router, private renderer2: Renderer2, private elemen
       techName1: "Wordpress",
       techName2: "Bootstrap 4",
       techName3: "jQuery"
-  
     }
   ]
  }
-
-
- 
-
 
  ngOnInit() {
         this.router.events.subscribe((evt) => {
@@ -131,76 +123,7 @@ constructor(private router: Router, private renderer2: Renderer2, private elemen
     }
 
   ngAfterViewInit() {
-    // let modalDivs = this.elementRef.nativeElement.querySelectorAll('.modal-container').clone()
-    // let mobileContainer = this.elementRef.nativeElement.querySelectorAll('.mobile-container')
-    // this.renderer2.appendChild(mobileContainer, modalDivs)
+    
   }
 }
 
-
-// @Component({
-    //   selector: 'app-root',
-    //   templateUrl: './app.component.html',
-    //   styleUrls: ['./app.component.scss'],
-    //   animations: [
-    //     trigger('routerTransition', [
-    //       transition('* <=> *', [    
-    //      style({ height: '!' }),
-    //             query(':enter', style({ transform: 'translateY(100%)' }, ), { optional: true }),
-    //             query(':enter, :leave', 
-    //                     style({ position: 'absolute', top: 80, left: 0, right: 0, opacity: 0.8 }), 
-    //                           { optional: true }),
-                  
-    //               group([
-    //                   // Leave go Bye Bye
-    //                   query(':leave', [
-    //                       animate('0.15s cubic-bezier(.35,0,.25,1)', 
-    //                       style({ transform: 'translateY(-100%)' })),
-    //                   ], { optional: true }),
-    //                   // Enter
-    //                   query(':enter', 
-    //                         animate('0.15s cubic-bezier(.35,0,.25,1)', 
-    //                         style({ transform: 'translateY(0)' })),
-    //                         { optional: true }),
-    //               ]),
-    //         ]),
-    //   ])
-    //   ],
-
-
-
-    // real
-
-
-
-//     @Component({
-//         selector: 'app-root',
-//         templateUrl: './app.component.html',
-//         styleUrls: ['./app.component.scss'],
-//         animations: [
-//           trigger('routerTransition', [
-//             transition('* <=> *', [    
-//            style({ height: '!' }),
-//                   query(':enter', style({ transform: 'translateX(100%)' }, ), { optional: true }),
-//                   query(':enter, :leave', 
-//                           style({ position: 'absolute', top: 80, left: 0, right: 0, opacity: 0.8 }), 
-//                                 { optional: true }),
-                    
-//                     group([
-//                         // Leave go Bye Bye
-//                         query(':leave', [
-//                             animate('0.15s cubic-bezier(.35,0,.25,1)', 
-//                             style({ transform: 'translateX(-100%)' })),
-//                         ], { optional: true }),
-//                         // Enter
-//                         query(':enter', 
-//                               animate('0.15s cubic-bezier(.35,0,.25,1)', 
-//                               style({ transform: 'translateX(0)' })),
-//                               { optional: true }),
-//                     ]),
-//               ]),
-//         ])
-//         ],
-//     host: { '[@routerTransition]': '' }
-  
-//   })

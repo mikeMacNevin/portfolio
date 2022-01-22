@@ -1,10 +1,38 @@
 <!-- animated fadeInRightBig wow --> 
 <div class="skills-div wow fadeInUp" data-wow-duration="2s">
   <!-- <h2>Web Technologies</h2> -->
-  <div class="progress-container d-flex flex-column justify-content-center">
-    <div *ngFor="let skill of skills" class="progress">
-      <div class="progress-label"><p><strong>{{skill.tech}}</strong></p> </div> 
-      <div class="progress-bar "  role="progressbar" [style.width.%]="skill.numb" aria-valuemin="0" aria-valuemax="100"></div>
+  <!-- <h2 class="text-center">Skills</h2> -->
+
+  <div class="row skill-row mt-4">
+
+    <div class="col-12 col-sm-6 offset-sm-3 offset-md-0 d-flex flex-column justify-content-top mb-4">
+      <p>Full-stack Javascript Developer passionate about creating sleek and responsive user interfaces and web applicatins that can bring data to users fingertips.</p>
+      <hr />
+      <table class="table table-sm">
+        <tr *ngFor="let item of items" class="items">
+          <th scope="row"><i class="{{item.icon}}"  aria-hidden="true"></i></th>
+          <td class="td-one"><strong>{{item.category}}</strong></td>
+          <td class="td-two">{{item.words}}</td>
+        </tr>
+      </table>
+
+
+      <!-- <ul class="skill-list">
+        <li>Full-stack JavaScript developer</li>
+        <li>I love building user interfaces that can quickly display the data users need</li>
+        <li>Current Freelance Project: <span>Versailles Custom Homes</span></li>
+        <li>Current Passion Project: <span>>Who Represents You?</span></li>
+      </ul> -->
     </div>
+  <div class="col-md-6 ">
+    <div class="progress-container d-flex flex-column justify-content-top">
+      <div *ngFor="let skill of skills" class="progress">
+        <!-- <div class="progress-label"><p><strong></strong></p> </div>  -->
+        <div class="progress-bar "  role="progressbar" [style.width.%]="skill.numb" aria-valuemin="0" aria-valuemax="100"><span class="progress-label"><p>&nbsp;&nbsp;{{skill.tech}}</p></span></div>
+      </div>
+    </div>
+  </div>
+
+    
   </div>
 </div>
